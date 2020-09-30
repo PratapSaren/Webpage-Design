@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title Alduin Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/dlogo.png")
+                | ADA
+            li #[a(href="/") Home]
+            li #[a(href="/") About Us]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    section#introSection
+        div Welcome to Alduin Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/d1.jpg")
+                div.card-content    
+                    p This is the Best Academy
+        div.card
+            h3 Dance is Culture
+            div.card-box
+                div.card-img
+                    img(src="/static/img/d2.jpg")
+                div.card-content    
+                    p This is the Best Academy
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/d3.jpg")
+                div.card-content    
+                    p This is the Best Academy
+
+    section#sponsorSection
+        h2 Our Sponsors
+        div#sponsors
+            img(Src="/static/img/s1.jpg", alt="Sponsor Image" class="spImage")
+            img(Src="/static/img/s2.jpg", alt="Sponsor Image" class="spImage")
+            img(Src="/static/img/s3.jpg", alt="Sponsor Image" class="spImage")
+            img(Src="/static/img/s4.png", alt="Sponsor Image" class="spImage")
+
+    footer#footer
+        | Copyright © 2019 AlduinDanceAcademy.com | All rights reserved
+    script
+      include ../static/index.js
